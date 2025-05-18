@@ -41,8 +41,9 @@
 
 > **注意：** 本仓库仅包含必要的代码和示例数据。  
 > **完整的大数据文件（物种点位和环境变量）请通过以下百度网盘地址下载：**  
-> [百度网盘链接（示例）](https://pan.baidu.com/s/your-link)  
-> 提取码：xxxx
+> 通过网盘分享的文件：test.zip
+链接: https://pan.baidu.com/s/1EVo0V32Ezx7bDVmnwOQ77w?pwd=de5b 提取码: de5b 
+--来自百度网盘超级会员v6的分享
 
 下载后请将数据分别放置于对应目录：
 
