@@ -2,7 +2,6 @@
 ├── .DS_Store
 ├── .gitattributes
 ├── .gitignore
-├── .gitignore copy
 ├── project_tree.txt
 ├── README.md
 ├── scripts
@@ -115,6 +114,7 @@
 │   ├── so_baseline_2000_2019_depthsurf_49ed_5fc4_602c_U1747104865639.nc
 │   └── thetao_baseline_2000_2019_depthsurf_74ff_39fa_9adc_U1747104852452.nc
 ├── T-maxent
+│   ├── .gitkeep
 │   ├── maxent.bat
 │   ├── maxent.jar
 │   ├── maxent.sh
