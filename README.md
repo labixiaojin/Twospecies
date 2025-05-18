@@ -3,6 +3,13 @@
   <img src="T-model_output/Am.languida_prediction.png" alt="Am.languida预测图" width="45%" style="margin:10px;"/>
   <img src="T-model_output/Az.dexteroporum_prediction.png" alt="Az.dexteroporum预测图" width="45%" style="margin:10px;"/>
 </p>
+<p align="center">
+  📄 <a href="Am.languida Maxent Modeling Report.pdf">Am.languida Maxent Modeling Report.pdf</a> |
+  📄 <a href="Az.dexteroporum Maxent Modeling Report.pdf">Az.dexteroporum Maxent Modeling Report.pdf</a> |
+  📄 <a href="Maxent model for Am.languida.pdf">Maxent model for Am.languida.pdf</a> |
+  📄 <a href="Maxent model for Az.dexteroporum.pdf">Maxent model for Az.dexteroporum.pdf</a>
+</p>
+
 # Twospecies 物种分布建模项目
 
 ---
