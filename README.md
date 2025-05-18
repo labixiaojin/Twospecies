@@ -4,10 +4,10 @@
   <img src="T-model_output/Az.dexteroporum_prediction.png" alt="Az.dexteroporum预测图" width="45%" style="margin:10px;"/>
 </p>
 <p align="center">
-  📄 <a href="Am.languida Maxent Modeling Report.pdf">Am.languida Maxent Modeling Report.pdf</a> |
-  📄 <a href="Az.dexteroporum Maxent Modeling Report.pdf">Az.dexteroporum Maxent Modeling Report.pdf</a> |
-  📄 <a href="Maxent model for Am.languida.pdf">Maxent model for Am.languida.pdf</a> |
-  📄 <a href="Maxent model for Az.dexteroporum.pdf">Maxent model for Az.dexteroporum.pdf</a>
+  📄 <a href="Am.languida Maxent Modeling Report.pdf">Am.languida Maxent Modeling Report.pdf</a> — 自动生成的模型报告<br/>
+  📄 <a href="Az.dexteroporum Maxent Modeling Report.pdf">Az.dexteroporum Maxent Modeling Report.pdf</a> — 自动生成的模型报告<br/>
+  📄 <a href="Maxent model for Am.languida.pdf">Maxent model for Am.languida.pdf</a> — 手动 Maxent 构建模型报告<br/>
+  📄 <a href="Maxent model for Az.dexteroporum.pdf">Maxent model for Az.dexteroporum.pdf</a> — 手动 Maxent 构建模型报告
 </p>
 
 # Twospecies 物种分布建模项目
