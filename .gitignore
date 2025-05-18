@@ -25,4 +25,8 @@ __pycache__/
 
 # 忽略 Maxent 工具文件夹
 T-maxent/*
-!T-maxent/.gitkeepT-maxent/
+!T-maxent/.gitkeep
+T-maxent/*
+T-env_layers_tif/
+T-env_layers_asc/
+T-envir/
