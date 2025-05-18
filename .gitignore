@@ -1,32 +1,33 @@
-# macOS / 系统文件
+# 忽略所有大型环境数据和模型输出
+T-env_layers_asc/*
+T-env_layers_tif/*
+T-envir/*
+T-cor_analysis/*
+T-model_output/*
+T-output_Amlanguida/*
+T-output_Azdexteroporum/*
+T-maxent/*
+
+# 忽略特定扩展名的大文件
+*.tif
+*.asc
+*.nc
+*.jar
+
+# 保留空目录用 .gitkeep 占位
+!T-env_layers_asc/.gitkeep
+!T-env_layers_tif/.gitkeep
+!T-envir/.gitkeep
+!T-cor_analysis/.gitkeep
+!T-model_output/.gitkeep
+!T-output_Amlanguida/.gitkeep
+!T-output_Azdexteroporum/.gitkeep
+!T-maxent/.gitkeep
+
+# macOS 系统文件
 .DS_Store
 
-# 环境变量目录（真实路径带 T- 前缀）
-T-env_layers_asc/
-T-env_layers_tif/
-T-envir/
-
-# 中间分析结果
-T-cor_analysis/
-T-model_output/
-T-output_Amlanguida/
-T-output_Azdexteroporum/
-
-# 清洗数据中不上传的大文件
-T-cleaned_points/*.dbf
-T-cleaned_points/*.shp
-T-cleaned_points/*.shx
-T-cleaned_points/*.prj
-
-# Jupyter / R 缓存
+# 缓存类文件
 *.ipynb_checkpoints
 __pycache__/
 .Rproj.user/
-
-# 忽略 Maxent 工具文件夹
-T-maxent/*
-!T-maxent/.gitkeep
-T-maxent/*
-T-env_layers_tif/
-T-env_layers_asc/
-T-envir/
