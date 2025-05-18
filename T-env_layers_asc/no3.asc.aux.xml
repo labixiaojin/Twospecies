@@ -1,0 +1,16 @@
+<PAMDataset>
+  <Metadata>
+    <MDI key="AREA_OR_POINT">Area</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Description>no3_mean</Description>
+    <Metadata>
+      <MDI key="DATE_TIME">2010-01-01T00:00:00</MDI>
+      <MDI key="STATISTICS_MAXIMUM">67.169059753418</MDI>
+      <MDI key="STATISTICS_MEAN">-9999</MDI>
+      <MDI key="STATISTICS_MINIMUM">0.0014220972079784</MDI>
+      <MDI key="STATISTICS_STDDEV">-9999</MDI>
+      <MDI key="UNIT">MMol' 'M-3</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

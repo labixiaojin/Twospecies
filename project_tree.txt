@@ -1,0 +1,263 @@
+.
+├── .DS_Store
+├── .gitattributes
+├── .gitignore
+├── .gitignore copy
+├── project_tree.txt
+├── README.md
+├── scripts
+│   ├── Am-maxentmodel.r
+│   ├── Az-maxentmodel.r
+│   ├── clean-csv.r
+│   ├── cor.r
+│   ├── maxent_report.Rmd
+│   ├── nc-tif-asc.r
+│   ├── report.r
+│   └── Rscript debug_options.r
+├── T-cleaned_points
+│   ├── Am.languida_cleaned.csv
+│   ├── Am.languida_cleaned.dbf
+│   ├── Am.languida_cleaned.prj
+│   ├── Am.languida_cleaned.shp
+│   ├── Am.languida_cleaned.shx
+│   ├── Az.dexteroporum_cleaned.csv
+│   ├── Az.dexteroporum_cleaned.dbf
+│   ├── Az.dexteroporum_cleaned.prj
+│   ├── Az.dexteroporum_cleaned.shp
+│   └── Az.dexteroporum_cleaned.shx
+├── T-cor_analysis
+│   ├── cor_matrix.csv
+│   ├── env_variables_sample.csv
+│   ├── selected_env_asc
+│   │   ├── distance.asc
+│   │   ├── po4.asc
+│   │   ├── si.asc
+│   │   └── so.asc
+│   ├── selected_env_tif
+│   │   ├── distance.tif
+│   │   ├── po4.tif
+│   │   ├── si.tif
+│   │   └── so.tif
+│   └── selected_vars.txt
+├── T-env_layers_asc
+│   ├── chl.asc
+│   ├── chl.asc.aux.json
+│   ├── chl.asc.aux.xml
+│   ├── chl.prj
+│   ├── distance.asc
+│   ├── distance.asc.aux.xml
+│   ├── distance.prj
+│   ├── maxent.cache
+│   │   ├── chl.info
+│   │   ├── chl.mxe
+│   │   ├── distance.info
+│   │   ├── distance.mxe
+│   │   ├── no3.info
+│   │   ├── no3.mxe
+│   │   ├── o2.info
+│   │   ├── o2.mxe
+│   │   ├── phyc.info
+│   │   ├── phyc.mxe
+│   │   ├── po4.info
+│   │   ├── po4.mxe
+│   │   ├── si.info
+│   │   ├── si.mxe
+│   │   ├── so.info
+│   │   ├── so.mxe
+│   │   ├── thetao.info
+│   │   └── thetao.mxe
+│   ├── no3.asc
+│   ├── no3.asc.aux.json
+│   ├── no3.asc.aux.xml
+│   ├── no3.prj
+│   ├── o2.asc
+│   ├── o2.asc.aux.json
+│   ├── o2.asc.aux.xml
+│   ├── o2.prj
+│   ├── phyc.asc
+│   ├── phyc.asc.aux.json
+│   ├── phyc.asc.aux.xml
+│   ├── phyc.prj
+│   ├── po4.asc
+│   ├── po4.asc.aux.json
+│   ├── po4.asc.aux.xml
+│   ├── po4.prj
+│   ├── si.asc
+│   ├── si.asc.aux.json
+│   ├── si.asc.aux.xml
+│   ├── si.prj
+│   ├── so.asc
+│   ├── so.asc.aux.json
+│   ├── so.asc.aux.xml
+│   ├── so.prj
+│   ├── thetao.asc
+│   ├── thetao.asc.aux.json
+│   ├── thetao.asc.aux.xml
+│   └── thetao.prj
+├── T-env_layers_tif
+│   ├── chl.tif
+│   ├── distance.tif
+│   ├── no3.tif
+│   ├── o2.tif
+│   ├── phyc.tif
+│   ├── po4.tif
+│   ├── si.tif
+│   ├── so.tif
+│   └── thetao.tif
+├── T-envir
+│   ├── chl_baseline_2000_2018_depthsurf_91d8_fb73_4955_U1747105091528.nc
+│   ├── distance-from-shore.tif
+│   ├── no3_baseline_2000_2018_depthsurf_8486_b388_df7c_U1747104879241.nc
+│   ├── o2_baseline_2000_2018_depthsurf_c6cd_716c_f3fc_U1747104993524.nc
+│   ├── phyc_baseline_2000_2020_depthsurf_b57c_78d1_ca7a_U1747105075274.nc
+│   ├── po4_baseline_2000_2018_depthsurf_6006_d51b_00e9_U1747104907431.nc
+│   ├── si_baseline_2000_2018_depthsurf_395f_f84b_becc_U1747104925913.nc
+│   ├── so_baseline_2000_2019_depthsurf_49ed_5fc4_602c_U1747104865639.nc
+│   └── thetao_baseline_2000_2019_depthsurf_74ff_39fa_9adc_U1747104852452.nc
+├── T-maxent
+│   ├── maxent.bat
+│   ├── maxent.jar
+│   ├── maxent.sh
+│   └── readme.txt
+├── T-model_output
+│   ├── .DS_Store
+│   ├── Am.languida_jackknife_plot_horizontal.png
+│   ├── Am.languida_jackknife.csv
+│   ├── Am.languida_maxent_report.html
+│   ├── Am.languida_optimal_params.csv
+│   ├── Am.languida_prediction.png
+│   ├── Am.languida_prediction.tif
+│   ├── Am.languida_response_curve_distance.from.shore.png
+│   ├── Am.languida_response_curve_po4_mean.png
+│   ├── Am.languida_response_curve_si_mean.png
+│   ├── Am.languida_response_curve_so_mean.png
+│   ├── Am.languida_response_curves_manual.png
+│   ├── Az.dexteroporum_jackknife_plot_horizontal.png
+│   ├── Az.dexteroporum_jackknife.csv
+│   ├── Az.dexteroporum_maxent_report.html
+│   ├── Az.dexteroporum_optimal_params.csv
+│   ├── Az.dexteroporum_prediction.png
+│   ├── Az.dexteroporum_prediction.tif
+│   ├── Az.dexteroporum_response_curve_distance.from.shore.png
+│   ├── Az.dexteroporum_response_curve_po4_mean.png
+│   ├── Az.dexteroporum_response_curve_si_mean.png
+│   ├── Az.dexteroporum_response_curve_so_mean.png
+│   └── Az.dexteroporum_response_curves_manual.png
+├── T-occurrences
+│   ├── Am.languida.csv
+│   └── Az.dexteroporum.csv
+├── T-output_Amlanguida
+│   ├── Am.languida_omission.csv
+│   ├── Am.languida_sampleAverages.csv
+│   ├── Am.languida_samplePredictions.csv
+│   ├── Am.languida.asc
+│   ├── Am.languida.html
+│   ├── Am.languida.lambdas
+│   ├── maxent.log
+│   ├── maxentResults.csv
+│   └── plots
+│       ├── Am.languida_chl_only_thumb.png
+│       ├── Am.languida_chl_only.png
+│       ├── Am.languida_chl_thumb.png
+│       ├── Am.languida_chl.png
+│       ├── Am.languida_distance_only_thumb.png
+│       ├── Am.languida_distance_only.png
+│       ├── Am.languida_distance_thumb.png
+│       ├── Am.languida_distance.png
+│       ├── Am.languida_jacknife_auc.png
+│       ├── Am.languida_jacknife_test.png
+│       ├── Am.languida_jacknife.png
+│       ├── Am.languida_no3_only_thumb.png
+│       ├── Am.languida_no3_only.png
+│       ├── Am.languida_no3_thumb.png
+│       ├── Am.languida_no3.png
+│       ├── Am.languida_o2_only_thumb.png
+│       ├── Am.languida_o2_only.png
+│       ├── Am.languida_o2_thumb.png
+│       ├── Am.languida_o2.png
+│       ├── Am.languida_omission.png
+│       ├── Am.languida_phyc_only_thumb.png
+│       ├── Am.languida_phyc_only.png
+│       ├── Am.languida_phyc_thumb.png
+│       ├── Am.languida_phyc.png
+│       ├── Am.languida_po4_only_thumb.png
+│       ├── Am.languida_po4_only.png
+│       ├── Am.languida_po4_thumb.png
+│       ├── Am.languida_po4.png
+│       ├── Am.languida_roc.png
+│       ├── Am.languida_si_only_thumb.png
+│       ├── Am.languida_si_only.png
+│       ├── Am.languida_si_thumb.png
+│       ├── Am.languida_si.png
+│       ├── Am.languida_so_only_thumb.png
+│       ├── Am.languida_so_only.png
+│       ├── Am.languida_so_thumb.png
+│       ├── Am.languida_so.png
+│       ├── Am.languida_thetao_only_thumb.png
+│       ├── Am.languida_thetao_only.png
+│       ├── Am.languida_thetao_thumb.png
+│       ├── Am.languida_thetao.png
+│       └── Am.languida.png
+├── T-output_Azdexteroporum
+│   ├── Az.dexteroporum_omission.csv
+│   ├── Az.dexteroporum_sampleAverages.csv
+│   ├── Az.dexteroporum_samplePredictions.csv
+│   ├── Az.dexteroporum.asc
+│   ├── Az.dexteroporum.html
+│   ├── Az.dexteroporum.lambdas
+│   ├── maxent.log
+│   ├── maxentResults.csv
+│   └── plots
+│       ├── Az.dexteroporum_chl_only_thumb.png
+│       ├── Az.dexteroporum_chl_only.png
+│       ├── Az.dexteroporum_chl_thumb.png
+│       ├── Az.dexteroporum_chl.png
+│       ├── Az.dexteroporum_distance_only_thumb.png
+│       ├── Az.dexteroporum_distance_only.png
+│       ├── Az.dexteroporum_distance_thumb.png
+│       ├── Az.dexteroporum_distance.png
+│       ├── Az.dexteroporum_jacknife_auc.png
+│       ├── Az.dexteroporum_jacknife_test.png
+│       ├── Az.dexteroporum_jacknife.png
+│       ├── Az.dexteroporum_no3_only_thumb.png
+│       ├── Az.dexteroporum_no3_only.png
+│       ├── Az.dexteroporum_no3_thumb.png
+│       ├── Az.dexteroporum_no3.png
+│       ├── Az.dexteroporum_o2_only_thumb.png
+│       ├── Az.dexteroporum_o2_only.png
+│       ├── Az.dexteroporum_o2_thumb.png
+│       ├── Az.dexteroporum_o2.png
+│       ├── Az.dexteroporum_omission.png
+│       ├── Az.dexteroporum_phyc_only_thumb.png
+│       ├── Az.dexteroporum_phyc_only.png
+│       ├── Az.dexteroporum_phyc_thumb.png
+│       ├── Az.dexteroporum_phyc.png
+│       ├── Az.dexteroporum_po4_only_thumb.png
+│       ├── Az.dexteroporum_po4_only.png
+│       ├── Az.dexteroporum_po4_thumb.png
+│       ├── Az.dexteroporum_po4.png
+│       ├── Az.dexteroporum_roc.png
+│       ├── Az.dexteroporum_si_only_thumb.png
+│       ├── Az.dexteroporum_si_only.png
+│       ├── Az.dexteroporum_si_thumb.png
+│       ├── Az.dexteroporum_si.png
+│       ├── Az.dexteroporum_so_only_thumb.png
+│       ├── Az.dexteroporum_so_only.png
+│       ├── Az.dexteroporum_so_thumb.png
+│       ├── Az.dexteroporum_so.png
+│       ├── Az.dexteroporum_thetao_only_thumb.png
+│       ├── Az.dexteroporum_thetao_only.png
+│       ├── Az.dexteroporum_thetao_thumb.png
+│       ├── Az.dexteroporum_thetao.png
+│       └── Az.dexteroporum.png
+└── T-scripts
+    ├── Am-maxentmodel.r
+    ├── Az-maxentmodel.r
+    ├── clean-csv.r
+    ├── cor.r
+    ├── maxent_report.Rmd
+    ├── nc-tif-asc.r
+    ├── report.r
+    └── Rscript debug_options.r
+
+18 directories, 243 files

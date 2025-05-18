@@ -1,0 +1,449 @@
+Mon May 19 00:49:35 CST 2025
+MaxEnt version 3.4.4
+Checking header of /Volumes/Rui's Mac/two_species/test/T-env_layers_asc/chl.asc
+Checking header of /Volumes/Rui's Mac/two_species/test/T-env_layers_asc/distance.asc
+Checking header of /Volumes/Rui's Mac/two_species/test/T-env_layers_asc/no3.asc
+Checking header of /Volumes/Rui's Mac/two_species/test/T-env_layers_asc/o2.asc
+Checking header of /Volumes/Rui's Mac/two_species/test/T-env_layers_asc/phyc.asc
+Checking header of /Volumes/Rui's Mac/two_species/test/T-env_layers_asc/po4.asc
+Checking header of /Volumes/Rui's Mac/two_species/test/T-env_layers_asc/si.asc
+Checking header of /Volumes/Rui's Mac/two_species/test/T-env_layers_asc/so.asc
+Checking header of /Volumes/Rui's Mac/two_species/test/T-env_layers_asc/thetao.asc
+Reading samples from Az.dexteroporum_cleaned.csv
+Read samples: max memory 4294967296, total allocated 671088640, free 529815648, used 141272992, increment -116166128
+Warning: Sample at 111.1936917, 13.95485667 in Az.dexteroporum_cleaned.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 110.6443533, 9.258383333 in Az.dexteroporum_cleaned.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 109.252685, 5.398025 in Az.dexteroporum_cleaned.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 110.0800317, 6.461106667 in Az.dexteroporum_cleaned.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 114.4009033, 14.81883167 in Az.dexteroporum_cleaned.csv is outside the bounding box of environmental data, skipping
+Warning: Sample at 109.539957, 7.942324 in Az.dexteroporum_cleaned.csv is outside the bounding box of environmental data, skipping
+Time since start: 5.516
+Extractor: max memory 4294967296, total allocated 671088640, free 510258344, used 160830296, increment 19557304
+Extracting random background and sample data
+Time since start: 6.56
+3132700 points with values for all grids
+Adding samples to background in feature space
+Command line used: 
+Command line to repeat: java density.MaxEnt nowarnings noprefixes responsecurves jackknife outputformat=logistic "outputdirectory=/Volumes/Rui's Mac/two_species/test/T-output_Azdexteroporum" "samplesfile=/Volumes/Rui's Mac/two_species/test/T-cleaned_points/Az.dexteroporum_cleaned.csv" "environmentallayers=/Volumes/Rui's Mac/two_species/test/T-env_layers_asc" randomseed skipifexists randomtestpoints=25 betamultiplier=2.0 noautofeature
+Species: Az.dexteroporum
+Layers: chl distance no3 o2 phyc po4 si so thetao
+Layertypes: Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous Continuous
+responsecurves: true
+jackknife: true
+outputformat: logistic
+outputdirectory: /Volumes/Rui's Mac/two_species/test/T-output_Azdexteroporum
+samplesfile: /Volumes/Rui's Mac/two_species/test/T-cleaned_points/Az.dexteroporum_cleaned.csv
+environmentallayers: /Volumes/Rui's Mac/two_species/test/T-env_layers_asc
+randomseed: true
+skipifexists: true
+randomtestpoints: 25
+betamultiplier: 2.0
+autofeature: false
+
+getSamples: max memory 4294967296, total allocated 671088640, free 477386848, used 193701792, increment 32871496
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 471055136, used 200033504, increment 6331712
+Az.dexteroporum: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 457156712, used 213931928, increment 13898424
+linearPredictor: max memory 4294967296, total allocated 671088640, free 457076440, used 214012200, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 457076440, used 214012200, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 457076440, used 214012200, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+Time since start: 14.028
+400: time = 7.392000 loss = 8.482343 testLoss 8.238951
+Resulting gain: 0.7311919063110626
+Projecting...
+Writing file /Volumes/Rui's Mac/two_species/test/T-output_Azdexteroporum/Az.dexteroporum.asc
+Time since start: 17.682
+Writing /Volumes/Rui's Mac/two_species/test/T-output_Azdexteroporum/plots/Az.dexteroporum.png
+Az.dexteroporum response curves
+Response curve: only chl
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 329762992, used 341325648, increment 127313448
+Az.dexteroporum chl: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 327930224, used 343158416, increment 1832768
+linearPredictor: max memory 4294967296, total allocated 671088640, free 327846256, used 343242384, increment 83968
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 327846256, used 343242384, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 327846256, used 343242384, increment 0
+Initial loss: 9.213535262872702
+80: time = 0.286000 loss = 9.114741
+Resulting gain: 0.09879428667458967
+Az.dexteroporum response curves
+Response curve: only distance
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 528866096, used 142222544, increment -201019840
+Az.dexteroporum distance: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 527748368, used 143340272, increment 1117728
+linearPredictor: max memory 4294967296, total allocated 671088640, free 527748368, used 143340272, increment 0
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 527748368, used 143340272, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 527748368, used 143340272, increment 0
+Initial loss: 9.213535262872702
+Time since start: 19.001
+220: time = 0.323000 loss = 9.053272
+Resulting gain: 0.16026291022831707
+Az.dexteroporum response curves
+Response curve: only no3
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 480041288, used 191047352, increment 47707080
+Az.dexteroporum no3: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 478436736, used 192651904, increment 1604552
+linearPredictor: max memory 4294967296, total allocated 671088640, free 478356464, used 192732176, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 478356464, used 192732176, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 478356464, used 192732176, increment 0
+Initial loss: 9.213535262872702
+60: time = 0.267000 loss = 8.950891
+Resulting gain: 0.2626437748036903
+Az.dexteroporum response curves
+Response curve: only o2
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 337119744, used 333968896, increment 141236720
+Az.dexteroporum o2: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 335462096, used 335626544, increment 1657648
+linearPredictor: max memory 4294967296, total allocated 671088640, free 335381824, used 335706816, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 335381824, used 335706816, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 335381824, used 335706816, increment 0
+Initial loss: 9.213535262872702
+120: time = 0.393000 loss = 9.088171
+Resulting gain: 0.12536457600341322
+Az.dexteroporum response curves
+Response curve: only phyc
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 505174592, used 165914048, increment -169792768
+Az.dexteroporum phyc: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 503669688, used 167418952, increment 1504904
+linearPredictor: max memory 4294967296, total allocated 671088640, free 503589416, used 167499224, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 503589416, used 167499224, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 503589416, used 167499224, increment 0
+Initial loss: 9.213535262872702
+80: time = 0.287000 loss = 9.103214
+Resulting gain: 0.11032084412589427
+Az.dexteroporum response curves
+Time since start: 20.008
+Response curve: only po4
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 328409264, used 342679376, increment 175180152
+Az.dexteroporum po4: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 327198192, used 343890448, increment 1211072
+linearPredictor: max memory 4294967296, total allocated 671088640, free 327117920, used 343970720, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 327117920, used 343970720, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 327117920, used 343970720, increment 0
+Initial loss: 9.213535262872702
+200: time = 0.670000 loss = 9.158528
+Resulting gain: 0.05500760030246532
+Az.dexteroporum response curves
+Response curve: only si
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 261721120, used 409367520, increment 65396800
+Az.dexteroporum si: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 260014880, used 411073760, increment 1706240
+linearPredictor: max memory 4294967296, total allocated 671088640, free 259934608, used 411154032, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 259934608, used 411154032, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 259934608, used 411154032, increment 0
+Initial loss: 9.213535262872702
+Time since start: 21.802
+320: time = 1.098000 loss = 8.742118
+Resulting gain: 0.47141708709030716
+Az.dexteroporum response curves
+Response curve: only so
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 325476912, used 345611728, increment -65542304
+Az.dexteroporum so: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 323808800, used 347279840, increment 1668112
+linearPredictor: max memory 4294967296, total allocated 671088640, free 323728528, used 347360112, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 323728528, used 347360112, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 323728528, used 347360112, increment 0
+Initial loss: 9.213535262872702
+120: time = 0.438000 loss = 8.872324
+Resulting gain: 0.3412116338712785
+Az.dexteroporum response curves
+Response curve: only thetao
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 443597920, used 227490720, increment -119869392
+Az.dexteroporum thetao: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 441916936, used 229171704, increment 1680984
+linearPredictor: max memory 4294967296, total allocated 671088640, free 441836664, used 229251976, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 441836664, used 229251976, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 441836664, used 229251976, increment 0
+Initial loss: 9.213535262872702
+Time since start: 23.049
+240: time = 0.775000 loss = 9.040289
+Resulting gain: 0.1732463695292772
+Az.dexteroporum response curves
+Jackknife: leave chl out
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 269838440, used 401250200, increment 171998224
+Az.dexteroporum chl: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 257636632, used 413452008, increment 12201808
+linearPredictor: max memory 4294967296, total allocated 671088640, free 257556360, used 413532280, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 257556360, used 413532280, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 257556360, used 413532280, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+Time since start: 29.976
+400: time = 6.753000 loss = 8.483654 testLoss 8.230983
+Jackknife: leave distance out
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 377738128, used 293350512, increment -120181768
+Az.dexteroporum distance: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 364756872, used 306331768, increment 12981256
+linearPredictor: max memory 4294967296, total allocated 671088640, free 364676600, used 306412040, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 364676600, used 306412040, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 364676600, used 306412040, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+Time since start: 35.464
+280: time = 5.421000 loss = 8.495497 testLoss 8.295265
+Jackknife: leave no3 out
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 168449256, used 502639384, increment 196227344
+Az.dexteroporum no3: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 537916056, used 133172584, increment -369466800
+linearPredictor: max memory 4294967296, total allocated 671088640, free 537916056, used 133172584, increment 0
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 537916056, used 133172584, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 537916056, used 133172584, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+Time since start: 40.61
+300: time = 5.080000 loss = 8.497328 testLoss 8.242932
+Jackknife: leave o2 out
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 254618520, used 416470120, increment 283297536
+Az.dexteroporum o2: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 242201216, used 428887424, increment 12417304
+linearPredictor: max memory 4294967296, total allocated 671088640, free 242120944, used 428967696, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 242120944, used 428967696, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 242120944, used 428967696, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+Time since start: 44.846
+240: time = 4.170000 loss = 8.502633 testLoss 8.207397
+Jackknife: leave phyc out
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 389611864, used 281476776, increment -147490920
+Az.dexteroporum phyc: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 377096552, used 293992088, increment 12515312
+linearPredictor: max memory 4294967296, total allocated 671088640, free 377016280, used 294072360, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 377016280, used 294072360, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 377016280, used 294072360, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+Time since start: 50.729
+340: time = 5.816000 loss = 8.483497 testLoss 8.219090
+Jackknife: leave po4 out
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 201576376, used 469512264, increment 175439904
+Az.dexteroporum po4: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 189275112, used 481813528, increment 12301264
+linearPredictor: max memory 4294967296, total allocated 671088640, free 189194840, used 481893800, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 189194840, used 481893800, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 189194840, used 481893800, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+Time since start: 56.194
+320: time = 5.401000 loss = 8.534696 testLoss 8.366693
+Jackknife: leave si out
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 362155664, used 308932976, increment -172960824
+Az.dexteroporum si: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 349942152, used 321146488, increment 12213512
+linearPredictor: max memory 4294967296, total allocated 671088640, free 349861880, used 321226760, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 349861880, used 321226760, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 349861880, used 321226760, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+Time since start: 61.725
+320: time = 5.465000 loss = 8.574948 testLoss 8.444326
+Jackknife: leave so out
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 511532288, used 159556352, increment -161670408
+Az.dexteroporum so: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 499176168, used 171912472, increment 12356120
+linearPredictor: max memory 4294967296, total allocated 671088640, free 499095896, used 171992744, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 499095896, used 171992744, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 499095896, used 171992744, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+Time since start: 68.212
+380: time = 6.421000 loss = 8.493445 testLoss 8.222707
+Jackknife: leave thetao out
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 517380664, used 153707976, increment -18284768
+Az.dexteroporum thetao: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 505126040, used 165962600, increment 12254624
+linearPredictor: max memory 4294967296, total allocated 671088640, free 505045768, used 166042872, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 505045768, used 166042872, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 505045768, used 166042872, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+Time since start: 74.02
+340: time = 5.741000 loss = 8.484785 testLoss 8.248257
+Jackknife: only chl
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 343432488, used 327656152, increment 161613280
+Az.dexteroporum chl: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 341599640, used 329489000, increment 1832848
+linearPredictor: max memory 4294967296, total allocated 671088640, free 341519368, used 329569272, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 341519368, used 329569272, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 341519368, used 329569272, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+80: time = 0.289000 loss = 9.114741 testLoss 9.418419
+Res.gain: 0.09879428667458967
+Jackknife: only distance
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 157726928, used 513361712, increment 183792440
+Az.dexteroporum distance: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 549481024, used 121607616, increment -391754096
+linearPredictor: max memory 4294967296, total allocated 671088640, free 549481024, used 121607616, increment 0
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 549037008, used 122051632, increment 444016
+Sequential: max memory 4294967296, total allocated 671088640, free 549037008, used 122051632, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+220: time = 0.274000 loss = 9.053272 testLoss 8.993925
+Res.gain: 0.16026291022831707
+Jackknife: only no3
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 505376000, used 165712640, increment 43661008
+Az.dexteroporum no3: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 503790224, used 167298416, increment 1585776
+linearPredictor: max memory 4294967296, total allocated 671088640, free 503709952, used 167378688, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 503709952, used 167378688, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 503709952, used 167378688, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+60: time = 0.281000 loss = 8.950891 testLoss 9.086152
+Res.gain: 0.2626437748036903
+Jackknife: only o2
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 365536208, used 305552432, increment 138173744
+Az.dexteroporum o2: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 364059352, used 307029288, increment 1476856
+linearPredictor: max memory 4294967296, total allocated 671088640, free 363979080, used 307109560, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 363979080, used 307109560, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 363979080, used 307109560, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+Time since start: 75.302
+120: time = 0.396000 loss = 9.088171 testLoss 9.024845
+Res.gain: 0.12536457600341322
+Jackknife: only phyc
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 523096608, used 147992032, increment -159117528
+Az.dexteroporum phyc: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 521291528, used 149797112, increment 1805080
+linearPredictor: max memory 4294967296, total allocated 671088640, free 521291528, used 149797112, increment 0
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 521291528, used 149797112, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 521291528, used 149797112, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+80: time = 0.291000 loss = 9.103214 testLoss 9.398657
+Res.gain: 0.11032084412589427
+Jackknife: only po4
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 349780912, used 321307728, increment 171510616
+Az.dexteroporum po4: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 348254432, used 322834208, increment 1526480
+linearPredictor: max memory 4294967296, total allocated 671088640, free 348174160, used 322914480, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 348174160, used 322914480, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 348174160, used 322914480, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+200: time = 0.682000 loss = 9.158528 testLoss 9.135638
+Res.gain: 0.05500760030246532
+Jackknife: only si
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 286956864, used 384131776, increment 61217296
+Az.dexteroporum si: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+Time since start: 76.304
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 285356192, used 385732448, increment 1600672
+linearPredictor: max memory 4294967296, total allocated 671088640, free 285275920, used 385812720, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 285275920, used 385812720, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 285275920, used 385812720, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+Time since start: 77.426
+320: time = 1.122000 loss = 8.742118 testLoss 8.508992
+Res.gain: 0.47141708709030716
+Jackknife: only so
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 359985472, used 311103168, increment -74709552
+Az.dexteroporum so: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 358240784, used 312847856, increment 1744688
+linearPredictor: max memory 4294967296, total allocated 671088640, free 358160512, used 312928128, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 358160512, used 312928128, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 358160512, used 312928128, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+120: time = 0.447000 loss = 8.872324 testLoss 8.843078
+Res.gain: 0.3412116338712785
+Jackknife: only thetao
+Making features
+makeFeatures: max memory 4294967296, total allocated 671088640, free 485071632, used 186017008, increment -126911120
+Az.dexteroporum thetao: 
+Regularization values: linear/quadratic/product: 0.536, categorical: 0.250, threshold: 1.680, hinge: 0.500
+32 samples
+Density: max memory 4294967296, total allocated 671088640, free 483368920, used 187719720, increment 1702712
+linearPredictor: max memory 4294967296, total allocated 671088640, free 483288648, used 187799992, increment 80272
+FeaturedSpace: max memory 4294967296, total allocated 671088640, free 483288648, used 187799992, increment 0
+Sequential: max memory 4294967296, total allocated 671088640, free 483288648, used 187799992, increment 0
+Initial loss: 9.213535262872702
+Initial test loss: 9.213535262872702
+Time since start: 78.68
+240: time = 0.786000 loss = 9.040289 testLoss 9.003196
+Res.gain: 0.1732463695292772
+Ending

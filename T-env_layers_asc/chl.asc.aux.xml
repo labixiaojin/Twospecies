@@ -1,0 +1,16 @@
+<PAMDataset>
+  <Metadata>
+    <MDI key="AREA_OR_POINT">Area</MDI>
+  </Metadata>
+  <PAMRasterBand band="1">
+    <Description>chl_mean</Description>
+    <Metadata>
+      <MDI key="DATE_TIME">2010-01-01T00:00:00</MDI>
+      <MDI key="STATISTICS_MAXIMUM">8.3225593566895</MDI>
+      <MDI key="STATISTICS_MEAN">-9999</MDI>
+      <MDI key="STATISTICS_MINIMUM">0.085748217999935</MDI>
+      <MDI key="STATISTICS_STDDEV">-9999</MDI>
+      <MDI key="UNIT">mg m-3</MDI>
+    </Metadata>
+  </PAMRasterBand>
+</PAMDataset>

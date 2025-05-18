@@ -1,0 +1,6 @@
+cat(">>> 当前 R session 启动无包、无配置 ...\n")
+sessionInfo()
+cat(">>> 设置 options ...\n")
+options(scipen = 999)
+cat(">>> getOption('scipen')=", getOption("scipen"), "\n")
+cat(">>> 完成！\n")
