@@ -2,6 +2,10 @@
 ├── .DS_Store
 ├── .gitattributes
 ├── .gitignore
+├── Am.languida Maxent Modeling Report.pdf
+├── Az.dexteroporum Maxent Modeling Report.pdf
+├── Maxent model for Am.languida.pdf
+├── Maxent model for Az.dexteroporum.pdf
 ├── project_tree.txt
 ├── README.md
 ├── scripts
@@ -25,6 +29,7 @@
 │   ├── Az.dexteroporum_cleaned.shp
 │   └── Az.dexteroporum_cleaned.shx
 ├── T-cor_analysis
+│   ├── .gitkeep
 │   ├── cor_matrix.csv
 │   ├── env_variables_sample.csv
 │   ├── selected_env_asc
@@ -39,6 +44,7 @@
 │   │   └── so.tif
 │   └── selected_vars.txt
 ├── T-env_layers_asc
+│   ├── .gitkeep
 │   ├── chl.asc
 │   ├── chl.asc.aux.json
 │   ├── chl.asc.aux.xml
@@ -94,6 +100,7 @@
 │   ├── thetao.asc.aux.xml
 │   └── thetao.prj
 ├── T-env_layers_tif
+│   ├── .gitkeep
 │   ├── chl.tif
 │   ├── distance.tif
 │   ├── no3.tif
@@ -104,6 +111,7 @@
 │   ├── so.tif
 │   └── thetao.tif
 ├── T-envir
+│   ├── .gitkeep
 │   ├── chl_baseline_2000_2018_depthsurf_91d8_fb73_4955_U1747105091528.nc
 │   ├── distance-from-shore.tif
 │   ├── no3_baseline_2000_2018_depthsurf_8486_b388_df7c_U1747104879241.nc
@@ -121,6 +129,7 @@
 │   └── readme.txt
 ├── T-model_output
 │   ├── .DS_Store
+│   ├── .gitkeep
 │   ├── Am.languida_jackknife_plot_horizontal.png
 │   ├── Am.languida_jackknife.csv
 │   ├── Am.languida_maxent_report.html
@@ -147,6 +156,7 @@
 │   ├── Am.languida.csv
 │   └── Az.dexteroporum.csv
 ├── T-output_Amlanguida
+│   ├── .gitkeep
 │   ├── Am.languida_omission.csv
 │   ├── Am.languida_sampleAverages.csv
 │   ├── Am.languida_samplePredictions.csv
@@ -199,6 +209,7 @@
 │       ├── Am.languida_thetao.png
 │       └── Am.languida.png
 ├── T-output_Azdexteroporum
+│   ├── .gitkeep
 │   ├── Az.dexteroporum_omission.csv
 │   ├── Az.dexteroporum_sampleAverages.csv
 │   ├── Az.dexteroporum_samplePredictions.csv
@@ -260,4 +271,4 @@
     ├── report.r
     └── Rscript debug_options.r
 
-18 directories, 243 files
+18 directories, 254 files
