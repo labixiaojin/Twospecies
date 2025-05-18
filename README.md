@@ -15,6 +15,27 @@
 
 ---
 
+## 📦 R 包依赖信息
+
+当前 R 版本：4.4.0
+
+以下为本项目涉及的主要 R 包及其版本：
+
+| Package    | Version       |
+|------------|---------------|
+| corrplot   | 0.95          |
+| dplyr      | 1.1.4         |
+| ENMeval    | 2.0.4         |
+| ggplot2    | 3.5.2         |
+| howtext    | Not Installed |
+| maxnet     | 0.1.4         |
+| rmarkdown  | 2.29          |
+| terra      | 1.8.50        |
+| tidyr      | 1.3.1         |
+| tool       | Not Installed |
+
+---
+
 ## 项目简介
 
 **Twospecies** 是一个基于 Maxent 的两种物种分布建模完整项目，涵盖了从数据清洗、环境变量处理、建模到结果分析的全流程。  
