@@ -24,4 +24,5 @@ __pycache__/
 .Rproj.user/
 
 # 忽略 Maxent 工具文件夹
-T-maxent/
+T-maxent/*
+!T-maxent/.gitkeep
