@@ -4,11 +4,15 @@
   <img src="T-model_output/Az.dexteroporum_prediction.png" alt="Az.dexteroporum预测图" width="45%" style="margin:10px;"/>
 </p>
 <div style="margin-top: 30px; text-align: left;">
-  <strong>📄 模型报告 PDF</strong><br/>
-  📄 <a href="Am.languida Maxent Modeling Report.pdf">Am.languida Maxent Modeling Report.pdf</a> — 自动生成的模型报告<br/>
-  📄 <a href="Az.dexteroporum Maxent Modeling Report.pdf">Az.dexteroporum Maxent Modeling Report.pdf</a> — 自动生成的模型报告<br/>
-  📄 <a href="Maxent model for Am.languida.pdf">Maxent model for Am.languida.pdf</a> — 手动 Maxent 构建模型报告<br/>
-  📄 <a href="Maxent model for Az.dexteroporum.pdf">Maxent model for Az.dexteroporum.pdf</a> — 手动 Maxent 构建模型报告
+  <strong>📄 模型报告 PDF</strong><br/><br/>
+  📘 <a href="Am.languida Maxent Modeling Report.pdf">Am.languida Maxent Modeling Report</a><br/>
+  <em>自动生成的 HTML 报告（通过 RMarkdown 渲染）</em><br/><br/>
+  📘 <a href="Az.dexteroporum Maxent Modeling Report.pdf">Az.dexteroporum Maxent Modeling Report</a><br/>
+  <em>自动生成的 HTML 报告（通过 RMarkdown 渲染）</em><br/><br/>
+  📙 <a href="Maxent model for Am.languida.pdf">Maxent model for Am.languida</a><br/>
+  <em>手动构建 Maxent 模型，包含详细参数与图形界面截图</em><br/><br/>
+  📙 <a href="Maxent model for Az.dexteroporum.pdf">Maxent model for Az.dexteroporum</a><br/>
+  <em>手动构建 Maxent 模型，包含详细参数与图形界面截图</em>
 </div>
 
 # Twospecies 物种分布建模项目
@@ -36,10 +40,54 @@
 
 ---
 
-## 项目简介
+## 数据声明
 
-**Twospecies** 是一个基于 Maxent 的两种物种分布建模完整项目，涵盖了从数据清洗、环境变量处理、建模到结果分析的全流程。  
-项目包含原始物种点位数据、环境变量数据、建模脚本与输出结果。为保证 GitHub 仓库的轻量化，**大数据文件请通过下方“数据获取”部分提供的百度网盘地址下载。**
+> **注意：** 本仓库为示例项目，仅保留脚本、目录结构与模型输出示意图。  
+> **原始物种分布点位数据和环境变量数据因涉及使用许可与保密协议，未在仓库中提供。**
+
+如有研究需要，可联系作者获取数据获取授权。
+
+---
+
+## 建模分析流程
+
+### 1. 数据清洗
+
+- **脚本路径：** `scripts/clean-csv.r`
+- **输入数据：** `T-occurrences/*.csv`
+- **输出数据：** 清洗后的点位（CSV），存于 `T-cleaned_points/`
+- ✅ 示例输出：`T-cleaned_points/Az.dexteroporum_cleaned.csv`
+
+### 2. 环境变量处理与筛选
+
+- **预处理脚本：** `scripts/nc-tif-asc.r`
+- **相关性分析脚本：** `scripts/cor.r`
+- **输入数据：** `T-envir/` 下的 `.nc` 文件和 `.tif`
+- **输出数据：**
+  - 转换为 `.asc` 或 `.tif`：`T-env_layers_asc/`、`T-env_layers_tif/`
+  - 筛选变量文件：`T-cor_analysis/selected_vars.txt`
+
+### 3. Maxent 建模（自动流程）
+
+- **建模脚本：**
+  - `T-scripts/Am-maxentmodel.r`：用于 Am.languida
+  - `T-scripts/Az-maxentmodel.r`：用于 Az.dexteroporum
+- **输出内容：**
+  - 模型预测栅格、响应曲线图、Jackknife分析等
+  - 存放于 `T-model_output/`、`T-output_Amlanguida/` 与 `T-output_Azdexteroporum/`
+
+### 4. HTML 报告生成（可选）
+
+- **脚本路径：** `T-scripts/report.r`
+- **模板文件：** `T-scripts/maxent_report.Rmd`
+- **示例输出：**
+  - `Am.languida_maxent_report.html`
+  - `Az.dexteroporum_maxent_report.html`
+
+### 5. Maxent.jar 手动建模（可选）
+
+- 手动运行 `T-maxent/maxent.jar`，进行参数设置与可视化输出
+- 可辅助理解自动流程输出并用于模型对比
 
 ---
 
@@ -66,21 +114,6 @@
 
 ---
 
-## 数据获取
-
-> **注意：** 本仓库仅包含必要的代码和示例数据。  
-> **完整的大数据文件（物种点位和环境变量）请通过以下百度网盘地址下载：**  
-> 通过网盘分享的文件：test.zip
-链接: https://pan.baidu.com/s/1EVo0V32Ezx7bDVmnwOQ77w?pwd=de5b 提取码: de5b 
---来自百度网盘超级会员v6的分享
-
-下载后请将数据分别放置于对应目录：
-
-- 物种分布点数据：`occurrences/`
-- 原始环境数据（NetCDF、tif）：`envir/`
-
----
-
 ## 快速上手
 
 1. **数据清洗**  
@@ -103,114 +136,6 @@
 5. **运行 Maxent 建模**  
    通过 `scripts/run_maxent.R` 调用 Maxent.jar，自动完成模型训练与预测，结果输出至 `model_output/` 及对应的 `output_Amlanguida/` 和 `output_Azdexteroporum/`。  
    📌 示例路径：`T-output_Amlanguida/Az.dexteroporum_prediction.tif`
-
----
-
-## 分析流程
-
-### 1. 数据清洗
-
-- **输入数据：** `occurrences/*.csv`  
-- **脚本路径：** `scripts/data_cleaning.R`  
-- **输出数据：** 清洗后的点位，保存于 `cleaned_points/`（CSV 和 Shapefile）  
-📌 示例输入：T-occurrences/Az.dexteroporum.csv  
-📌 示例输出：T-cleaned_points/Az.dexteroporum_cleaned.csv
-
-### 2. 环境变量准备与筛选
-
-- **输入数据：** `envir/*.nc`、`envir/*.tif`  
-📌 示例输入：T-envir/po4_baseline_2000_2018_depthsurf_6006_d51b_00e9_U1747104907431.nc  
-- **脚本路径：** `scripts/env_preprocessing.R`  
-- **输出数据：** 环境变量栅格文件，分别存储于 `env_layers_asc/` 和 `env_layers_tif/`  
-📌 示例输出：T-env_layers_asc/po4.asc, T-env_layers_tif/po4.tif
-
-- **相关性分析**  
-  - **输入数据：** `env_layers_asc/` 中的栅格文件  
-  📌 示例输入：T-env_layers_asc/*.asc  
-  - **脚本路径：** `scripts/correlation_analysis.R`  
-  - **输出数据：** 相关性分析报告及最终变量列表，保存在 `cor_analysis/`  
-  📌 示例输出：T-cor_analysis/selected_vars.txt
-
-### 3. 构建 Maxent 输入数据
-
-- **输入数据：**  
-  - 清洗后的点位文件 `cleaned_points/*.csv`  
-  - 筛选后的环境变量栅格（`env_layers_asc/` 或 `env_layers_tif/`）  
-  📌 示例输入：T-cleaned_points/Am.languida_cleaned.csv + T-env_layers_asc/*.asc  
-- **脚本路径：** `scripts/prepare_maxent_input.R`  
-- **输出数据：** Maxent 输入文件，存放于 `maxent/input/`  
-📌 示例输出：maxent/input/species.csv
-
-### 4. Maxent 建模（R 脚本自动化）
-
-- **输入数据：** `maxent/input/` 中的样本和环境变量数据  
-- **脚本路径：** `scripts/run_maxent.R`  
-- **输出数据：**  
-  - 模型结果、响应曲线、预测分布图等  
-  - 分别保存于 `model_output/`、`output_Amlanguida/` 和 `output_Azdexteroporum/`（根据物种不同）  
-  📌 示例输出：T-output_Amlanguida/Az.dexteroporum_prediction.tif
-
-- **功能说明：** 自动完成模型训练和预测，方便批量处理和参数调整。
-
-### 5. Maxent.jar 图形界面/命令行建模（可选）
-
-- **程序位置：** `maxent/` 文件夹  
-- **说明：**  
-  - 可使用 Maxent 图形界面手动调整参数和运行模型  
-  - 支持命令行批量执行，相关示例和说明位于 `maxent/` 及 `scripts/run_maxent.R`
-
-### 6. 结果分析与可视化
-
-- **脚本路径：** `scripts/model_evaluation.R`  
-- **输入数据：** `model_output/` 中的模型预测结果  
-- **功能说明：**  
-  - 统计模型性能指标（如 AUC、TSS）  
-  - 制作预测分布图、响应曲线图和变量贡献图  
-  - 输出图表及报告保存在 `model_output/`  
-  - 结合 GIS 软件进行空间展示和进一步分析，相关栅格和矢量文件保存在 `model_output/` 和 `output_*` 文件夹中
-
----
-
-### 7 HTML 报告自动生成（可选）
-
-- **脚本路径：** `scripts/report.R`  
-- **RMarkdown 模板：** `scripts/maxent_report.Rmd`
-- **输入数据：**  
-  - 模型参数表（`*_optimal_params.csv`）  
-  - Jackknife 图和变量贡献表  
-  - 响应曲线、预测图等输出图片  
-- **输出文件：** HTML 格式的建模报告，保存在每个物种的 `T-model_output/` 下
-
-📌 示例输出：`T-model_output/Az.dexteroporum_maxent_report.html`
-
-- **运行方法：**  
-  可通过以下命令运行该脚本并生成报告：
-
-  ```r
-  source("scripts/report.R")
-  ```
-
-  或手动使用 `rmarkdown::render()` 渲染：
-
-  ```r
-  rmarkdown::render(
-    input = "scripts/maxent_report.Rmd",
-    output_file = "Az.dexteroporum_maxent_report.html",
-    params = list(
-      species = "Az.dexteroporum",
-      model_dir = "T-model_output",
-      ...
-    ),
-    knit_root_dir = "T-model_output"
-  )
-  ```
-
-> 💡 自动报告包括物种信息、最优参数、响应曲线、Jackknife图、预测概率图等完整内容，适用于模型归档和科研展示。
-
----
-
-
-## 8 Maxent.jar使用方法示例
 
 ---
 
